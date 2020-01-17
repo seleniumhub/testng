@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Gmail Suite"  > 
+ 
+ 
+ <listeners>
+        <listener class-name="testcases.RetryListenerClass"/>
+  </listeners>
+<!--  <suite thread-count="1" verbose="1" name="Gmail Suite" annotations="JDK" parallel="tests"> -->
+ 
+  <test name="Test1">
+     <classes>
+          <!-- <class name="testcases.testngdemo"/> -->
+             <class name="testcases.classdataprovider"/>
+          
+   </classes>
+    </test>
+    
+     <!-- <test name="Test2">
+       <classes>
+           <class name="testcases.testnglogin"/> 
+    </classes>
+    </test> -->
+    <!-- <class name="testcases.class1"/> 
+    <class name="testcases.class2"/>    -->
+  <!--   </classes> -->
+       <!-- <groups>
+         <run>
+            <include name = "regression"/> 
+            <include name = "functional"/>
+         </run>
+         
+      </groups> -->
+    
+   <!--  
+    <classes>
+   <class name="testcases.testngdemo"/> 
+    <class name="testcases.testnglogin"/> 
+    
+    <class name="testcases.class1"/> 
+    <class name="testcases.class2"/>   
+    </classes>
+  </test> Test -->
+  
+  
+  
+  
+  
+</suite> <!-- Suite -->

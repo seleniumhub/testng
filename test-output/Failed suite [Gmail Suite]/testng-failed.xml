@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Gmail Suite]]">
+  <listeners>
+    <listener class-name="testcases.RetryListenerClass"/>
+  </listeners>
+  <test name="Test2(failed)(failed)">
+    <classes>
+      <class name="testcases.testngdemo">
+        <methods>
+          <include name="beforemethod"/>
+          <include name="Aftermethod"/>
+        </methods>
+      </class> <!-- testcases.testngdemo -->
+      <class name="testcases.testnglogin">
+        <methods>
+          <include name="testcase_01"/>
+        </methods>
+      </class> <!-- testcases.testnglogin -->
+    </classes>
+  </test> <!-- Test2(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Gmail Suite]] -->

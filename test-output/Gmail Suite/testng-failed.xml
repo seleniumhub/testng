@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Gmail Suite]">
+  <listeners>
+    <listener class-name="testcases.RetryListenerClass"/>
+  </listeners>
+  <test name="Test1(failed)">
+    <classes>
+      <class name="testcases.class5">
+        <methods>
+          <include name="testdepand2"/>
+          <include name="testdepand1"/>
+        </methods>
+      </class> <!-- testcases.class5 -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Gmail Suite] -->
